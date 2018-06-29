@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Animate.css WOW.js sample</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <style>
+            body{
+                margin:0;
+            }
+            h1{
+                font: "Roboto", Verdana, sans-serif;
+                padding-top:400px;
+                width:50%;
+                margin: 0 auto;
+                color: #4682b4;
+                font-size: 4rem;
+                line-height: 1;
+                font-weight:100;
+            }
+            h2{
+                width:50%;
+                margin:0 auto;
+                padding-top:100px;
+                font-size:2em;
+                color:royalblue;
+            }
+            .top {
+                background: url(cloud.jpg) center center / cover no-repeat fixed;
+            }
+            .stars {
+                background: url(stars.jpg) center center / cover no-repeat fixed;
+            }
+            .foot {
+                background: url(sea.jpg) center center / cover no-repeat fixed;
+            }
+            .stars p{
+                color: #eee;
+                width:50%;
+                margin:0 auto;
+                padding-top:50px;
+                font-size:2em;
+            }
+            div{
+                height:700px;
+            }
+            ul{
+                width:50%;
+                margin:0 auto;
+            }
+            li a{
+                color:#ff33cc;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top">
+            <div class="wow fadeIn" data-wow-duration="5s">
+                <h1 class="wow slideInRight" data-wow-duration="4s">FadeIn & Slide</h1> 
+            </div>
+        </div>
+        
+        <div class="stars">
+            <div class="wow bounce">
+                <p>This contents pyonpyon</p>
+                <p>↓Please scroll.↓</p>
+            </div>
+        </div>
+        <div class="foot">
+            <h2><i>Link</i></h2>
+            <ul>
+                <li class="wow slideInLeft"><a href="https://daneden.github.io/animate.css/" target="_blank">Animate.css</a></li>
+                <li class="wow slideInLeft" data-wow-delay="0.1s"><a href="http://mynameismatthieu.com/WOW/" target="_blank">Wow Live DEMO</a></li>
+                <li class="wow slideInLeft" data-wow-delay="0.2s"><a href="#" target="_blank">Link</a></li>
+                <li class="wow slideInLeft" data-wow-delay="0.3s"><a href="#" target="_blank">Link</a></li>
+                <li class="wow slideInLeft" data-wow-delay="0.4s"><a href="#" target="_blank">Link</a></li>
+                <li class="wow slideInLeft" data-wow-delay="0.5s"><a href="#" target="_blank">Link</a></li>
+            </ul>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    </body>
+</html>
